@@ -2,7 +2,6 @@
     "name": "matusstafura/magento2-phone-validation",
     "description": "Phone validation for Magento 2",
     "type": "magento2-module",
-    "version": "0.1.0",
     "license": "MIT",
     "keywords": [
         "magento2",

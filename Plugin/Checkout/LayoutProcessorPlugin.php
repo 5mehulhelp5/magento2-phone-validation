@@ -52,8 +52,6 @@ class LayoutProcessorPlugin
      */
     protected function extendAddressFields(array &$fields): void
     {
-        if (isset($fields['vat_id'])) {
-            $fields['telephone']['validation']['phone_validation'] = true;
-        }
+        $fields['telephone']['validation']['phone_validation'] = true;
     }
 }
