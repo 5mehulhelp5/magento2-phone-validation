@@ -5,4 +5,11 @@
         <plugin name="MatusStafura_PhoneValidation_Plugin_Checkout_LayoutProcessorPlugin" sortOrder="10"
                 type="MatusStafura\PhoneValidation\Plugin\Checkout\LayoutProcessorPlugin"/>
     </type>
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="phone_validation" xsi:type="object">MatusStafura\PhoneValidation\Model\PhoneValidationConfigProvider</item>
+            </argument>
+        </arguments>
+     </type> 
 </config>

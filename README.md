@@ -30,7 +30,7 @@ or clone this module to `app/code/MatusStafura/PhoneValidation`:
 git clone git@github.com:matusstafura/magento2-phone-validation.git 
 ````
 
-2. Enable and compile:
+2. Enable and compile module:
 
 ```bash
 bin/magento module:enable MatusStafura_PhoneValidation
@@ -38,12 +38,10 @@ bin/magento setup:upgrade
 bin/magento setup:di:compile
 bin/magento cache:flush
 ```
----
 
-## 🚀 TODO
+3. Enable / disable in Admin:
 
-- ✅ Edit rules per store via admin
-- ✅ Extendable for per-country rules
+Stores > Configuration > Customers > Customer Configuration > Phone Validation
 
 ---
 

@@ -1,14 +1,21 @@
 define([
     'jquery',
     'mage/translate',
-    'jquery/validate'
+    'jquery/validate',
+    'domReady!'
 ], function ($) {
     'use strict';
 
     return function (validator) {
         validator.addRule(
             'phone_validation',
-            function (value, element) {
+            function (value) {
+                const isEnabled = window.checkoutConfig.phoneValidation === true;
+
+                if (!isEnabled) {
+                    return true;
+                }
+
                 if (value === '') {
                     return true;
                 }
