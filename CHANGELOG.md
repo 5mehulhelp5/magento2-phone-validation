@@ -4,13 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## [0.2.0] – 2025-08-03
+## [v0.2.0] – 2025-08-03
 ### Added
 - ✅ Admin configuration option to enable/disable validation per store view.
 
 ---
 
-## [0.1.0] – 2025-07-31
+## [v0.1.0] – 2025-07-31
 ### Added
 - 📱 Initial release of the Magento 2 Phone Validation module.
 - 🧪 Regex validation for phone numbers (digits only).
